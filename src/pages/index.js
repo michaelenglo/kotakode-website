@@ -1,20 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import KotakodeLogo from "../images/kotakode-logo.png"
+import "./index.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO title="Kotakode" />
+    <div className="container">
+      <div className="content">
+        <img src={KotakodeLogo} className="kotakode-logo" />
+        <h3 className="subtitle">Tempat untuk kode dan programmer</h3>
+        <h4>Hai Programmers!</h4>
+        <h5>
+          Terima kasih untuk antusiasi Anda kepada Kotakode. Kami akan segera
+          hadir untuk membantu mencari segala pertanyaan programming Anda.
+        </h5>
+      </div>
+      <div className="image-container"></div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
